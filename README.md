@@ -4,9 +4,6 @@ This is a repo of the Capstone project in the [Udacity C++ Nanodegree Program](h
 
 <img src="snake_game.gif"/>
 
-The Capstone Project gives you a chance to integrate what you've learned throughout this program. This project will become an important part of your portfolio to share with current and future colleagues and employers.
-
-In this project, you can build your own C++ application or extend this Snake game, following the principles you have learned throughout this Nanodegree Program. This project will demonstrate that you can independently create applications using a wide range of C++ features.
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
@@ -30,6 +27,48 @@ In this project, you can build your own C++ application or extend this Snake gam
 3. Compile: `cmake .. && make`
 4. Run it: `./SnakeGame`.
 
+## Rubric Tasks Achieved
+
+The idea of the developer is to add levels to the game play (easy, medium and hard). The user can select the prefered game play in the beginning. This implementation is done by extending the program source files with `environment.h` and `environment.cpp`. The following rubric tasks are afforded as follows:
+
+1. **Object Oriented Programming: The project uses Object Oriented Programming techniques.**
+*Developer Comment: The added features are introduced within the class Environment.*
+
+2. **Object Oriented Programming: Classes use appropriate access specifiers for class members.**
+*Developer Comment: The data members _difficulty and _borders are to be hidden from the user. This is why they are introduced as private members.*
+
+3. **Object Oriented Programming: Classes use appropriate access specifiers for class members.**
+*Developer Comment: The data members _difficulty and _borders are initialized from the class Environment constructor.*
+
+4. **Object Oriented Programming: Classes abstract implementation details from their interfaces.**
+*Developer Comment: All the getters and the setters within the class Environment have meaningful names and they document their behaviour on the terminal using std::cout.*
+
+5. **Object Oriented Programming: Classes encapsulate behavior.**
+*Developer Comment: The data members _difficulty and _borders are accessible only through their corresponding setters (SetDifficulty() and ReadBorders()) and getters (GetDifficulty() and GetBoarders()).*
+
+6. **Loops, Functions, I/O: The project accepts user input and processes the input.**
+*Developer Comment: The class member function SetDifficulty() fetches the user input to select the game play level. The function is implemented recursively to avoid the bad user input.*
+*The user hast to push 'e' for easy, this level has 0 blocked cells as barriers:*
+<img src="1.Select_Easy.png"/>
+
+*The user hast to push 'm' for medium, this level has 68 blocked cells as barriers:*
+<img src="2.Select_Medium.png"/>
+
+*The user hast to push 'h' for hard, this level has 144 blocked cells as barriers:*
+<img src="3.Select_Hard.png"/>
+
+*In case of entering a bad input (e.g. j), the programm repeats the user inquiry till a proper input is entered:*
+<img src="4.Select_Recursion.png"/>
+
+7. **Loops, Functions, I/O: The project reads data from a file and process the data, or the program writes data to a file.**
+*Developer Comment: The class member function ReadBoard() reads one of the three pre-saved lavels maps (easy.txt, medium.txt or hard.txt), saved under the folder levels.*
+
+8. **Memory Management: The project makes use of references in function declarations.**
+*Developer Comment: The class Environment is instantiated and constructed within the main scope and the other classes instances (snake, game and render) are extended with pointers of the class Environment type. There is only one copy of the intance Environment living within main.
+The methods Snake::SnakeCell() and Environment::BorderCell() receive thier input values by reference not by value. The method Snake::SnakeCell() in the original implementation was inefficient as it was calling its input by value.*
+
+8. **Memory Management: The project demonstrates an understanding of C++ functions and control structures.**
+*Developer Comment: The original classes members (Snake, Game and Render) implementations were extended properly so that they reach the needed information from the class Environment.*
 
 ## CC Attribution-ShareAlike 4.0 International
 
