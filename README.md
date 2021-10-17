@@ -49,15 +49,19 @@ The idea of the developer is to add levels to the game play (easy, medium and ha
 6. **Loops, Functions, I/O: The project accepts user input and processes the input.**
 *Developer Comment: The class member function SetDifficulty() fetches the user input to select the game play level. The function is implemented recursively to avoid the bad user input.*
 *The user hast to push 'e' for easy, this level has 0 blocked cells as barriers:*
+
 <img src="1.Select_Easy.png"/>
 
 *The user hast to push 'm' for medium, this level has 68 blocked cells as barriers:*
+
 <img src="2.Select_Medium.png"/>
 
 *The user hast to push 'h' for hard, this level has 144 blocked cells as barriers:*
+
 <img src="3.Select_Hard.png"/>
 
 *In case of entering a bad input (e.g. j), the programm repeats the user inquiry till a proper input is entered:*
+
 <img src="4.Select_Recursion.png"/>
 
 7. **Loops, Functions, I/O: The project reads data from a file and process the data, or the program writes data to a file.**
