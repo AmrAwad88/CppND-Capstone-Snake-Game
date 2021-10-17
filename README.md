@@ -48,17 +48,18 @@ The idea of the developer is to add levels to the game play (easy, medium and ha
 
 6. **Loops, Functions, I/O: The project accepts user input and processes the input.**
 *Developer Comment: The class member function SetDifficulty() fetches the user input to select the game play level. The function is implemented recursively to avoid the bad user input.*
-*The user hast to push 'e' for easy, this level has 0 blocked cells as barriers:*
-![image](https://user-images.githubusercontent.com/90916107/137639188-45a6aad7-1b08-4003-acb5-c07bf5f1e3cd.png)
 
- *The user hast to push 'm' for medium, this level has 68 blocked cells as barriers:*
- ![image](https://user-images.githubusercontent.com/90916107/137639202-629b62bf-2fb8-4971-ac9d-755ed0c4dbf8.png)
+   *The user hast to push 'e' for easy, this level has 0 blocked cells as barriers:*
+   ![image](https://user-images.githubusercontent.com/90916107/137639188-45a6aad7-1b08-4003-acb5-c07bf5f1e3cd.png)
 
- *The user hast to push 'h' for hard, this level has 144 blocked cells as barriers:*
- ![image](https://user-images.githubusercontent.com/90916107/137639217-90e817d0-48a5-4181-8bd7-1311b1cfe22d.png)
+   *The user hast to push 'm' for medium, this level has 68 blocked cells as barriers:*
+   ![image](https://user-images.githubusercontent.com/90916107/137639202-629b62bf-2fb8-4971-ac9d-755ed0c4dbf8.png)
 
- *In case of entering a bad input (e.g. j), the programm repeats the user inquiry till a proper input is entered:*
- ![image](https://user-images.githubusercontent.com/90916107/137639230-a1344437-e4f5-474e-b706-72a39e1d8f08.png)
+   *The user hast to push 'h' for hard, this level has 144 blocked cells as barriers:*
+   ![image](https://user-images.githubusercontent.com/90916107/137639217-90e817d0-48a5-4181-8bd7-1311b1cfe22d.png)
+
+   *In case of entering a bad input (e.g. j), the programm repeats the user inquiry till a proper input is entered:*
+   ![image](https://user-images.githubusercontent.com/90916107/137639230-a1344437-e4f5-474e-b706-72a39e1d8f08.png)
 
 7. **Loops, Functions, I/O: The project reads data from a file and process the data, or the program writes data to a file.**
 *Developer Comment: The class member function ReadBoard() reads one of the three pre-saved lavels maps (easy.txt, medium.txt or hard.txt), saved under the folder levels.*
