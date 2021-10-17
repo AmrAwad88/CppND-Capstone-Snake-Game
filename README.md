@@ -31,7 +31,7 @@ This is a repo of the Capstone project in the [Udacity C++ Nanodegree Program](h
 
 The idea of the developer is to add levels to the game play (easy, medium and hard). The user can select the prefered game play in the beginning. This implementation is done by extending the program source files with `environment.h` and `environment.cpp`. The following rubric tasks are afforded as follows:
 
-1. **Object Oriented Programming: The project uses Object Oriented Programming techniques.**/
+1. **Object Oriented Programming: The project uses Object Oriented Programming techniques.**//
 *Developer Comment: The added features are introduced within the class Environment.*
 
 2. **Object Oriented Programming: Classes use appropriate access specifiers for class members.**
