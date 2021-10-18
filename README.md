@@ -62,13 +62,13 @@ The idea of the developer is to add levels to the game play (easy, medium and ha
    ![image](https://user-images.githubusercontent.com/90916107/137639230-a1344437-e4f5-474e-b706-72a39e1d8f08.png)
 
 7. **Loops, Functions, I/O: The project reads data from a file and process the data, or the program writes data to a file.**\
-*Developer Comment: The class member function ReadBoard() reads one of the three pre-saved lavels maps (easy.txt, medium.txt or hard.txt), saved under the folder levels.*
+*Developer Comment: The class member function ReadBoard() reads one of the three pre-saved levels maps (easy.txt, medium.txt or hard.txt), saved under the folder levels.*
 
 8. **Memory Management: The project makes use of references in function declarations.**\
 *Developer Comment: The class Environment is instantiated and constructed within the main scope and the other classes instances (snake, game and render) are extended with pointers of the class Environment type. There is only one copy of the intance Environment living within main.
 The methods Snake::SnakeCell() and Environment::BorderCell() receive thier input values by reference not by value. The method Snake::SnakeCell() in the original implementation was inefficient as it was calling its input by value.*
 
-8. **Memory Management: The project demonstrates an understanding of C++ functions and control structures.**\
+8. **Loops, Functions, I/O: The project demonstrates an understanding of C++ functions and control structures.**\
 *Developer Comment: The original classes members (Snake, Game and Render) implementations were extended properly so that they reach the needed information from the class Environment.*
 
 ## CC Attribution-ShareAlike 4.0 International
